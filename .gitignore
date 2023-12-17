@@ -1,2 +1,2 @@
-program.out.dSYM
-program.out
+# Ignore binaries
+bin/

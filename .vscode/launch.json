@@ -4,14 +4,14 @@
       "name": "C/C++: clang++ build and debug active file",
       "type": "cppdbg",
       "request": "launch",
-      "program": "${workspaceFolder}/program.out",
+      "program": "${workspaceFolder}/bin/${workspaceFolderBasename}-debug",
       "args": [],
       "stopAtEntry": true,
       "cwd": "${fileDirname}",
       "environment": [],
       "externalConsole": false,
       "MIMode": "lldb",
-      "preLaunchTask": "Build all c++ files"
+      "preLaunchTask": "Debug - Build all c++ files"
     }
   ],
   "version": "2.0.0"

@@ -2,7 +2,7 @@
   "tasks": [
     {
       "type": "cppbuild",
-      "label": "Build all c++ files",
+      "label": "Debug - Build all c++ files",
       "command": "/usr/bin/clang++",
       "args": [
         "-std=c++17",
@@ -12,7 +12,7 @@
         "-g",
         "*.cpp",
         "-o",
-        "${workspaceFolder}/program.out"
+        "${workspaceFolder}/bin/${workspaceFolderBasename}-debug"
       ],
       "options": {
         "cwd": "${workspaceFolder}"
@@ -22,6 +22,29 @@
         "kind": "build",
         "isDefault": true
       },
+      "detail": "Compile all cpp files"
+    },
+    {
+      "type": "cppbuild",
+      "label": "Prod - Build all c++ files",
+      "command": "/usr/bin/clang++",
+      "args": [
+        "-std=c++17",
+        "-stdlib=libc++",
+        "-O2",
+        "-DNDEBUG",
+        "-fcolor-diagnostics",
+        "-fansi-escape-codes",
+        "-g",
+        "*.cpp",
+        "-o",
+        "${workspaceFolder}/bin/${workspaceFolderBasename}"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": ["$gcc"],
+      "group": "build",
       "detail": "Compile all cpp files"
     }
   ],
