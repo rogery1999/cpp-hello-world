@@ -1,0 +1,29 @@
+{
+  "tasks": [
+    {
+      "type": "cppbuild",
+      "label": "Build all c++ files",
+      "command": "/usr/bin/clang++",
+      "args": [
+        "-std=c++17",
+        "-stdlib=libc++",
+        "-fcolor-diagnostics",
+        "-fansi-escape-codes",
+        "-g",
+        "*.cpp",
+        "-o",
+        "${workspaceFolder}/program.out"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": ["$gcc"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "detail": "Compile all cpp files"
+    }
+  ],
+  "version": "2.0.0"
+}
