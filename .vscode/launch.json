@@ -1,17 +1,24 @@
 {
   "configurations": [
     {
-      "name": "C/C++: clang++ build and debug active file",
+      "name": "Debug",
       "type": "cppdbg",
       "request": "launch",
-      "program": "${workspaceFolder}/bin/${workspaceFolderBasename}-debug",
+      "program": "${workspaceFolder}/tmp/build/hello-world",
       "args": [],
       "stopAtEntry": true,
-      "cwd": "${fileDirname}",
+      "cwd": "${workspaceFolder}",
       "environment": [],
       "externalConsole": false,
       "MIMode": "lldb",
-      "preLaunchTask": "Debug - Build all c++ files"
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "build"
     }
   ],
   "version": "2.0.0"
