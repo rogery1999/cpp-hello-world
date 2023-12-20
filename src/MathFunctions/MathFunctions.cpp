@@ -1,7 +1,10 @@
 #include "MathFunctions.h"
 #include "mysqrt.h"
 
-double sqrt(double a)
+namespace mathFunctions
 {
-  return mySqrt(a);
-}
+  double sqrt(double a)
+  {
+    return mySqrt(a);
+  }
+} // namespace mathFunctions

@@ -54,5 +54,6 @@
     "variant": "cpp",
     "algorithm": "cpp",
     "*.in": "cpp"
-  }
+  },
+  "cSpell.words": ["DCMAKE"]
 }

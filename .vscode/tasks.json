@@ -1,14 +1,21 @@
 {
   "tasks": [
     {
-      "label": "build",
+      "label": "Debug - build",
       "type": "shell",
       "command": "cmake",
-      "args": ["--build", "${workspaceFolder}/tmp/build"],
+      "args": ["--build", "${workspaceFolder}/build", "--config", "Debug"],
       "group": {
         "kind": "build",
         "isDefault": true
       }
+    },
+    {
+      "label": "Release - build",
+      "type": "shell",
+      "command": "cmake",
+      "args": ["--build", "${workspaceFolder}/build", "--config", "Release"],
+      "group": "build"
     }
   ],
   "version": "2.0.0"

@@ -4,22 +4,21 @@
 #include "config.h"
 #include "MathFunctions/MathFunctions.h"
 
-using namespace std;
+void doSomething(int &)
+{
+}
 
 int main()
 {
-  vector<string> msg{"Hello", "world", "from", "Rogery", "!", "7"};
+  int x;
+  doSomething(x);
 
-  for (const string &word : msg)
-  {
-    cout << word << " ";
-  }
-  cout << endl;
+  std::cout << "uninitialized value of x: " << x << '\n';
 
-  cout << "project version: " << hello_world_VERSION_MAJOR << "." << hello_world_VERSION_MINOR << endl;
+  std::cout << "Enter a number for x: ";
+  std::cin >> x;
 
-  float num = 1.44;
-  cout << "sqrt(" << num << "): " << sqrt(num);
+  std::cout << "the value of x enter by the user is: " << x << '\n';
 
   return 0;
 }
