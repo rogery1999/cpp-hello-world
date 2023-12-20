@@ -8,7 +8,13 @@ int main()
   int inputNum{};
   std::cin >> inputNum;
 
-  std::cout << "Double " << inputNum << " is: " << inputNum * 2 << '\n';
+  std::cout << "Enter another integer: ";
+
+  int inputNum2{};
+  std::cin >> inputNum2;
+
+  std::cout << inputNum << " + " << inputNum2 << " is " << inputNum + inputNum2 << '\n';
+  std::cout << inputNum << " - " << inputNum2 << " is " << inputNum - inputNum2 << '\n';
 
   return 0;
 }
