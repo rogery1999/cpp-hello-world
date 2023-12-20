@@ -53,7 +53,8 @@
     "unordered_map": "cpp",
     "variant": "cpp",
     "algorithm": "cpp",
-    "*.in": "cpp"
+    "*.in": "cpp",
+    "span": "cpp"
   },
   "cSpell.words": ["DCMAKE"]
 }

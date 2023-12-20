@@ -1,24 +1,14 @@
 #include <iostream>
-#include <vector>
-#include <string>
-#include "config.h"
-#include "MathFunctions/MathFunctions.h"
-
-void doSomething(int &)
-{
-}
 
 int main()
 {
-  int x;
-  doSomething(x);
 
-  std::cout << "uninitialized value of x: " << x << '\n';
+  std::cout << "Enter an integer: ";
 
-  std::cout << "Enter a number for x: ";
-  std::cin >> x;
+  int inputNum{};
+  std::cin >> inputNum;
 
-  std::cout << "the value of x enter by the user is: " << x << '\n';
+  std::cout << "Double " << inputNum << " is: " << inputNum * 2 << '\n';
 
   return 0;
 }
