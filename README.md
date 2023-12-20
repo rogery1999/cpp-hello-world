@@ -22,7 +22,7 @@ rm -rf ./build
 cmake -B ./build -S . -DCMAKE_BUILD_TYPE=Debug
 ```
 
-1. Generate the executable
+2. Generate the executable
 
 ```bash
 cmake --build ./build
@@ -36,7 +36,7 @@ cmake --build ./build
 cmake -B ./build -S . -DCMAKE_BUILD_TYPE=Release
 ```
 
-1. Generate the executable
+2. Generate the executable
 
 ```bash
 cmake --build ./build
