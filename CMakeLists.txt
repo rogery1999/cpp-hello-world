@@ -20,12 +20,14 @@ if(CMAKE_BUILD_TYPE STREQUAL "Release")
   add_definitions(-DNDEBUG)
 endif()
 
+set(srcDirectory "${PROJECT_SOURCE_DIR}/src")
 
-configure_file(src/config.h.in src/config.h)
-add_subdirectory(src/MathFunctions)
-add_executable(hello-world src/main.cpp)
+configure_file(${srcDirectory}/config.h.in ${srcDirectory}/config.h)
 
-target_link_libraries(hello-world PRIVATE MathFunctions)
+file(GLOB_RECURSE sources ${srcDirectory}/*.cpp)
+
+add_executable(hello-world ${sources})
+
 target_include_directories(hello-world PRIVATE ${CMAKE_BINARY_DIR})
-target_include_directories(hello-world PRIVATE "${PROJECT_BINARY_DIR}" "${PROJECT_SOURCE_DIR}/src/MathFunctions")
+target_include_directories(hello-world PUBLIC ${srcDirectory}/add)
 
