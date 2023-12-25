@@ -1,22 +1,12 @@
 #include "io.h"
 #include <iostream>
 
-double getUserDouble()
+double getInitialHeight()
 {
-  std::cout << "Enter a double value: ";
+  std::cout << "Enter the height of the tower in meters: ";
 
-  double num{};
-  std::cin >> num;
+  double height{};
+  std::cin >> height;
 
-  return num;
-}
-
-char getUserOperand()
-{
-  std::cout << "Enter +, -, *, or /: ";
-
-  char operand{};
-  std::cin >> operand;
-
-  return operand;
+  return height;
 }

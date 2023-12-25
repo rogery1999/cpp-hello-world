@@ -29,5 +29,5 @@ file(GLOB_RECURSE sources ${srcDirectory}/*.cpp)
 add_executable(hello-world ${sources})
 
 target_include_directories(hello-world PRIVATE ${CMAKE_BINARY_DIR})
-target_include_directories(hello-world PUBLIC ${srcDirectory}/io ${srcDirectory}/math_op)
+target_include_directories(hello-world PUBLIC ${srcDirectory}/io ${srcDirectory}/physics)
 
