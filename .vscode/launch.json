@@ -6,7 +6,7 @@
       "request": "launch",
       "program": "${workspaceFolder}/build/hello-world",
       "args": [],
-      "stopAtEntry": true,
+      "stopAtEntry": false,
       "cwd": "${workspaceFolder}",
       "environment": [],
       "externalConsole": true,

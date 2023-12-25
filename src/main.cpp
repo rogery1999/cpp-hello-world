@@ -1,11 +1,14 @@
 #include "io.h"
+#include "math_op.h"
+#include <iostream>
 
 int main()
 {
-  int num1{readNumber()};
-  int num2{readNumber()};
+  double num1{getUserDouble()};
+  double num2{getUserDouble()};
+  char operand{getUserOperand()};
 
-  writeAnswer(num1 + num2);
+  printOperationResult(num1, num2, operand);
 
   return 0;
 }

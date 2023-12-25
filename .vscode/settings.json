@@ -54,7 +54,8 @@
     "variant": "cpp",
     "algorithm": "cpp",
     "*.in": "cpp",
-    "span": "cpp"
+    "span": "cpp",
+    "iomanip": "cpp"
   },
   "cSpell.words": ["DCMAKE"]
 }
