@@ -3,6 +3,8 @@
 
 #include <iostream>
 
-void printOperationResult(double num1, double num2, char operand);
+void processAndPrintOperationResult(double num1, double num2, char operand);
+
+void printResult(double num1, double num2, char operand, double result);
 
 #endif

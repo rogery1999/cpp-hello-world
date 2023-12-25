@@ -8,7 +8,7 @@ int main()
   double num2{getUserDouble()};
   char operand{getUserOperand()};
 
-  printOperationResult(num1, num2, operand);
+  processAndPrintOperationResult(num1, num2, operand);
 
   return 0;
 }
